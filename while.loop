@@ -1,0 +1,79 @@
+print("what would you like to do?1.check whether the number is palindrome\n2.check whether the number is armstrong\n3.reverse the number\n4.print fibonacci series") 
+choice=int(input("enter: "))
+while 1:
+    if choice==0:
+        break
+    elif choice==1:
+        print("kindly ! enter 0 to exit from the loop")
+        a=int(input("enter a number:"))
+        num1=0
+        m=0
+        num1=a
+        c=0
+        while a>0:
+            c=a%10
+            m=m*10+c
+            a=a//10
+        if num1==0:
+                break
+        elif num1==m:
+                print("number is palindrome")
+
+        else:
+                print("this is not a palindrome number")
+    elif choice==2:
+        print("kindly! enter 0 to exit from the loop")
+        a=int(input("enter a number:"))
+        copy1=a
+        g=0
+        y=0
+        num1=0
+        while a>1:
+            y=a%10
+            a=a//10
+            g=a%10
+            a=a//10
+            num1=y**3+g**3+a**3
+        if a==0:
+            break
+        elif num1==copy1:
+           print("this is armstrong number")
+        else:
+           print("this is not an armstrong number")
+            
+    elif  choice==3:
+        
+        a=int(input("enter a number:"))
+        
+        
+        rev1=0
+        c=0
+        while a>0:
+             c=a%10
+             rev1=rev1*10+c
+             a=a//10
+        print(rev1)
+        if a==0:
+            break
+    elif choice==4:
+       print("kindly!enter 0 to exit from the loop")
+       p=int(input("enter the limit "))
+       a=0
+       b=1
+       m=0
+       while  b<p:
+              print(b)
+              hel1=m
+              m=b
+              b=hel1+b
+       if p==0:
+           break
+              
+              
+             
+
+         
+                
+            
+            
+            
